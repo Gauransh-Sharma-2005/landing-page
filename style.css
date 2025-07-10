@@ -3,7 +3,6 @@
 }
 
 .header {
-    flex-direction: column;
     display: flex;
     justify-content: space-between; /* pushes the first child to the left and the last child to the right with space in between */
     align-items: center; /*children are vertically centered within the headers height*/
@@ -12,8 +11,8 @@
     color: white;
 }
 
-/* .navbar {
-    display: flex;
+.navbar {
+    display: flex; /*flexbox of the three header links*/
     gap: 20px;
 }
 
@@ -21,4 +20,4 @@
     color: white;
     text-decoration: none;
     font-size: 18px;
-} */
+} 
