@@ -1,0 +1,24 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between; /* pushes the first child to the left and the last child to the right with space in between */
+    align-items: center; /*children are vertically centered within the headers height*/
+    padding: 20px;
+    background-color: #1f2937;
+    color: white;
+}
+
+/* .navbar {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+} */
