@@ -1,4 +1,7 @@
 * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*makes sizing intuitive by including padding and borders in an element's width/height. This means that the actual width will include content + padding + border*/
     font-family: 'Roboto', sans-serif;
 }
 
@@ -9,28 +12,26 @@
     padding: 20px;
     background-color: #1f2937;
     color: white;
-    height: 60px;
+    /*height: 60px;*/
 }
 
 .logo {
-    display: flex;
-    align-items: center;
+    /* display: flex; */                /*logo is simple text element (no nested items)*/
+    /* align-items: center; */          /*not needed, already handled by the parent (.header)*/
     font-size: 18px;
     font-weight: bold;
-    line-height: 1;
-    margin: 0;
-    padding: 0;
+    /* line-height: 1; */               /*can cause text clipping for some fonts*/ 
+    /* margin: 0;
+    padding: 0; */                      /*both not needed since already mentioned globally*/
 }
 
 .navbar {
-    display: flex;
-    align-items: center;
-    display: flex; /*flexbox of the three header links*/
+    display: flex;                      /*flexbox of the three header links*/
     gap: 20px;
 }
 
 .navbar a {
-    line-height: 1;
+    /*line-height: 1*/                  /*Line height not needed since using default spacing*/
     color: white;
     text-decoration: none;
     font-size: 18px;
@@ -38,17 +39,57 @@
 
 .hero {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
     padding: 48px;
-    font-weight: 900;
-    color: #f9faf8;
     background-color: #1f2937;
-    text-align: left;
+    /* text-align: left; */
+    gap: 48px;                        /* Space between text and image */
 }
 
-.hero p {
+.hero-text {
+    flex: 1;
+    max-width: 600px;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    margin-bottom: 16px;
+    color: #f9faf8;
+    font-weight: 900;
+}
+
+.hero-text p {
     font-size: 18px;
     color: #e5e7eb;
     margin-bottom: 18px;
+    /* max-width: 600px; */                    /* Prevents text from stretching too wide */
+}
+
+.hero-text button{
+    background-color: #3883f6;
+    color: white;
+    border: none;
+    padding: 8px 24px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    /*width: fit-content;*/                  /* Button width adjusts to content */
+}
+
+.hero-image {
+    flex: 1;
+    background-color: #6d747d;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #e5e7eb;
+}
+
+footer {
+    background-color: #1f2937;
+    color: white;
+    text-align: center;
+    padding: 24px;
 }
