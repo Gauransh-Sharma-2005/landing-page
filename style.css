@@ -77,6 +77,11 @@
     /*width: fit-content;*/                  /* Button width adjusts to content */
 }
 
+.hero-text button:hover {
+    background-color: white;
+    color: #3882f6;
+}
+
 .hero-image {
     flex: 1;
     background-color: #6d747d;
@@ -158,4 +163,52 @@ footer {
     font-size: 16px;
     color: #000;
     text-align: right;
+}
+
+.cta {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    padding: 40px;
+    margin: 30px;
+}
+
+.cta-container {
+    background-color: #3882f6;
+    color: white;
+    max-width: 1000px;
+    width: 100%;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cta-text strong {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.cta-text p {
+    margin: 4px 0 0 0;
+    font-size: 0.9rem;
+}
+
+.cta-button {
+    background-color: #3882f6;
+    color: white;
+    border: 2px solid white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.cta-button:hover {
+    background-color: white;
+    color: #3882f6;
 }
