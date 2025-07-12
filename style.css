@@ -7,12 +7,12 @@
 
 .header {
     display: flex;
-    justify-content: space-between; /* pushes the first child to the left and the last child to the right with space in between */
-    align-items: center; /*children are vertically centered within the headers height*/
-    padding: 20px;
+    justify-content: space-between;     /* pushes the first child to the left and the last child to the right with space in between */
+    align-items: center;                /*children are vertically centered within the headers height*/
+    padding: 50px;
     background-color: #1f2937;
     color: white;
-    /*height: 60px;*/
+    /*height: 60px;*/                   /* Fixed height and can cause content overlapping*/
 }
 
 .logo {
@@ -21,8 +21,8 @@
     font-size: 18px;
     font-weight: bold;
     /* line-height: 1; */               /*can cause text clipping for some fonts*/ 
-    /* margin: 0;
-    padding: 0; */                      /*both not needed since already mentioned globally*/
+    /* margin: 0;                       
+    padding: 0;                        /*both not needed since already mentioned globally*/
 }
 
 .navbar {
@@ -43,7 +43,7 @@
     align-items: center;
     padding: 48px;
     background-color: #1f2937;
-    /* text-align: left; */
+    /* text-align: left; */           /* has no effect on flex children */
     gap: 48px;                        /* Space between text and image */
 }
 
@@ -92,4 +92,70 @@ footer {
     color: white;
     text-align: center;
     padding: 24px;
+}
+
+.class-info {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+.class-info h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.info-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;                         /*prevents overflow of the cards*/
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 150px;
+}
+
+.card-image {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #3882f6;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 12px;
+    color: #555;
+}
+
+.quote-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+    background-color: #e5e7eb;
+}
+
+.quote-container {
+    max-width: 800px;
+    text-align: left;
+}
+
+.quote-text {
+    font-size: 20px;
+    font-style: italic;
+    color: #1f2937;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.quote {
+    font-size: 16px;
+    color: #000;
+    text-align: right;
 }
